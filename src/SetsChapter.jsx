@@ -1391,7 +1391,12 @@ case 'Theory':
         flexWrap: 'wrap',
         gap: 12
       }}>
-        <b style={{ fontSize: 19 }}>∑ The Maths Academy</b>
+        <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.3 }}>
+  <b style={{ fontSize: 19 }}>The Mathematics Academy</b>
+  <span style={{ fontSize: 10, letterSpacing: 1, marginTop: 3, opacity: 0.8 }}>
+    by SARBASIS MUKHERJEE
+  </span>
+</div>
         <button
           onClick={onBack}
           style={{

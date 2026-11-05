@@ -58,15 +58,30 @@ if (activeChapter === 'Sets, Relations & Functions') {
 }
   return (
     <div>
-      <header className="topbar">
-        <a className="brand" href="#"><span className="brand-mark">∑</span><span>The Maths <b>Academy</b></span></a>
-        <nav>
-          <a href="#courses">Courses</a>
-          <a href="#tracks">JEE Tracks</a>
-          <a href="#features">Why us</a>
-        </nav>
-        <a className="nav-cta" href="#courses">Explore courses <span>↗</span></a>
-      </header>
+      <a className="brand" href="#">
+  <span className="brand-mark">∫</span>
+
+  <span style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    justifyContent: 'center'
+  }}>
+    <span style={{ fontSize: 40, fontWeight: 800 }}>
+      The Mathematics Academy
+    </span>
+
+    <span style={{
+      display: 'block',
+      fontSize: 30,
+      fontWeight: 600,
+      letterSpacing: 1,
+      marginTop: 4
+    }}>
+      by SARBASIS MUKHERJEE
+    </span>
+  </span>
+</a>
 
       <main>
         <section className="hero">
@@ -84,7 +99,7 @@ if (activeChapter === 'Sets, Relations & Functions') {
             <div className="art-orbit orbit-one"></div><div className="art-orbit orbit-two"></div>
             <div className="formula formula-a">∫ f(x) dx</div>
             <div className="formula formula-b">a² + b² = c²</div>
-            <div className="formula formula-c">eⁱπ + 1 = 0</div>
+            <div className="formula formula-c">e<sup>iπ</sup> + 1 = 0</div>
             <div className="formula formula-d">lim x → 0</div>
             <div className="art-center">∑</div>
             <div className="art-caption">THINK · EXPLORE · MASTER</div>
@@ -159,7 +174,20 @@ if (activeChapter === 'Sets, Relations & Functions') {
         </section>
       </main>
 
-      <footer><a className="brand footer-brand" href="#"><span className="brand-mark">∑</span><span>The Maths <b>Academy</b></span></a><p>Think clearly. Practise purposefully. Achieve more.</p><span>© 2026 The Maths Academy</span></footer>
+      <footer>
+  <a className="brand footer-brand" href="#">
+    <span className="brand-mark">∫</span>
+    <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.3 }}>
+      <b>The Mathematics Academy</b>
+      <small style={{ fontSize: 10, letterSpacing: 1, marginTop: 4 }}>
+        by SARBASIS MUKHERJEE
+      </small>
+    </span>
+  </a>
+
+  <p>Think clearly. Practise purposefully. Achieve more.</p>
+  <span>© 2026 The Mathematics Academy</span>
+</footer>
     </div>
   );
 }
